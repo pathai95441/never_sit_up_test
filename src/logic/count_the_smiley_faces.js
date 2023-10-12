@@ -1,7 +1,23 @@
+const isEye = (input) => {
+    return (input == ':' || input == ';')
+}
+
+const isNose = (input) => {
+    return (input == '-' || input == '~')
+}
+
+const isMouthSmile = (input) => {
+    return (input == ')' || input == 'D')
+}
 
 export const isSmile = (text) => {
-    const lastStr = text.slice(-1)
-    return lastStr == ")" || lastStr == "D"
+    if(text.length == 2) {
+        return isEye(text[0]) && isMouthSmile(text[1])
+    }
+    if(text.length == 3) {
+        return isEye(text[0]) && isNose(text[1]) && isMouthSmile(text[2])
+    }
+    return false
 }
 
 export const countTheSmileyFaces = (array) => {

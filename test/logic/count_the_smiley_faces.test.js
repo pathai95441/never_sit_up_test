@@ -15,7 +15,7 @@ describe('Count The Smiley Faces should return count valid smile', () => {
     })
 })
 
-describe('Is smile should return true when last character equal "D" or ")" ', () => {
+describe('IsSmile', () => {
   it('case 1', () => {
     expect(isSmile(";D")).toBe(true)
   })

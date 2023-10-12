@@ -1,0 +1,18 @@
+{
+    "name": "never_situp_test",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "test": "jest",
+        "shuffling": "node main.js shuffling",
+        "find_the_odd_int": "node main.js find_the_odd_int",
+        "count_the_smiley_faces": "node main.js count_the_smiley_faces"
+    },
+    "devDependencies": {
+        "jest": "27.5.1"
+    },
+    "dependencies": {
+        "@babel/preset-env": "7.23.2"
+    }
+}
